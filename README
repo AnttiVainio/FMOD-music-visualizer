@@ -1,0 +1,25 @@
+Screenshots of the program and Windows and Linux binaries compiled by Antti Vainio are available on his site at:
+http://www.anttivainio.net/visualizer
+
+
+This program is supposed to visualize the spectrum of music with bars representing volumes of different frequencies and some squares representing volumes of bass and left and right channels. The program uses OpenGL 3.1 for graphics and FMOD for playing music and analyzing the spectrum. As FMOD does the actual analysis, this program does no FFT or anything else regarding spectrum analysis, instead solely focusing on visualizing the data. There is still one important thing to notice: FMOD gives the spectrum using linear scale whereas sound spectrum is better visualized using logarithmic scale, meaning this program still needs to do that conversion.
+
+You can also play other songs than the one song that comes with this program. This can be done by giving the file name/path as the first command line parameter. On Windows this can also be done by dragging a music file, which is in this same folder, on the executable file of this program.
+
+The song that comes with this program is Horizon by Geoplex. You can get the original version from http://www.newgrounds.com/audio/listen/520387
+
+
+Compiling instructions:
+The program can be compiled at least on Windows and Linux.
+Linux users may use the provided Makefile to compile the program. You must have the dev package of GLFW and GLEW installed to compile. The 64-bit Linux version of FMOD is included in this project to make it easier to use the Makefile. If you need to compile a 32-bit version you need to download the 32-bit version of FMOD, too.
+If you don't use the Makefile (like on Windows) you should link at least glew32, glfw, opengl32 and fmodex.
+
+
+Running the program:
+Once compiled, you must have your graphic card drivers installed and support for OpenGL 3.1.
+
+
+This program was originally released on May 12th, 2014 at http://www.anttivainio.net
+
+You may use all the source codes for anything you want.
+
