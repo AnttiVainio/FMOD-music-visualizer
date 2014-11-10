@@ -3,7 +3,7 @@ SOURCES = $(wildcard src/*.cpp)
 OBJECTS = $(SOURCES:.cpp=.o)
 CFLAGS  = -c -O2 -Wall -pedantic
 INCLUDES = -I./fmod_include
-LIBRARIES = `pkg-config --libs libglfw` -lGLEW ./libfmodex64-4.44.32.so
+LIBRARIES = `pkg-config --libs libglfw` -lGLEW -lGL ./libfmodex64-4.44.32.so
 
 all: $(PROJECT)
 
