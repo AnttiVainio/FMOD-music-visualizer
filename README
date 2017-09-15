@@ -1,5 +1,5 @@
 Screenshots of the program and Windows and Linux binaries compiled by Antti Vainio are available on his site at:
-http://www.anttivainio.net/visualizer
+https://www.anttivainio.net/visualizer
 
 
 This program is supposed to visualize the spectrum of music with bars representing volumes of different frequencies and some squares representing volumes of bass and left and right channels. The program uses OpenGL 3.1 for graphics and FMOD for playing music and analyzing the spectrum. As FMOD does the actual analysis, this program does no FFT or anything else regarding spectrum analysis, instead solely focusing on visualizing the data. There is still one important thing to notice: FMOD gives the spectrum using linear scale whereas sound spectrum is better visualized using logarithmic scale, meaning this program still needs to do that conversion.
@@ -19,7 +19,7 @@ Running the program:
 Once compiled, you must have your graphic card drivers installed and support for OpenGL 3.1.
 
 
-This program was originally released on May 12th, 2014 at http://www.anttivainio.net
+This program was originally released on May 12th, 2014 at https://www.anttivainio.net
 
 You may use all the source codes for anything you want.
 
